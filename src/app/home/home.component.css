@@ -1,0 +1,12 @@
+.title{
+  text-align: center;
+  height: 200px;
+}
+
+.title > h1 {
+  padding: 50px;
+}
+
+.card-container {
+  padding: 10px;
+}

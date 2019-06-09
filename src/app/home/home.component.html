@@ -1,0 +1,18 @@
+<div class="container title">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 card-container" *ngFor="let section of sections">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{section.name}}</h5>
+          <p class="card-text">{{section.description}}</p>
+          <a [routerLink]="section.url" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
