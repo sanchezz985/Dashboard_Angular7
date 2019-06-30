@@ -15,6 +15,7 @@ export class DashboardContainerComponent implements OnInit {
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
+  showFiller = false;
   projectName = "";
   projectDescription = "";
   projectCreationDate = "";

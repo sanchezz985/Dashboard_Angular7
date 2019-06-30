@@ -10,12 +10,10 @@ import projects from '../../assets/projects.json';
 export class ProjectsComponent implements OnInit {
 
   title:String;
-  headers:Array<String>;
   projects:Project;
 
   ngOnInit() {
     this.title = "Projects";
-    this.headers = ["#","Name","Description"];
     this.projects = projects;
   }
 

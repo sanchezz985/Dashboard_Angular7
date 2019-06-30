@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   MatTableModule,
-  MatPaginatorModule, MatSortModule, MatFormFieldModule, MatInputModule
+  MatPaginatorModule, MatSortModule, MatFormFieldModule, MatInputModule, MatSidenavModule
 } from '@angular/material';
 
 @NgModule({
@@ -14,14 +14,16 @@ import {
     MatPaginatorModule,
     MatSortModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSidenavModule
   ],
   exports:[
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSidenavModule
   ]
 })
 
