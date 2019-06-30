@@ -15,25 +15,39 @@ export class DashboardContainerComponent implements OnInit {
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
-  showFiller = false;
-  projectName = "";
-  projectDescription = "";
-  projectCreationDate = "";
   displayedColumns: String[] = ['name','description','version'];
   projectsDataSource: MatTableDataSource<Project>;
+  selectedProject: Project;
 
+  /**
+   * Init components
+   */
   ngOnInit() {
     this.projectsDataSource = new MatTableDataSource<Project>(this.projects);
     this.projectsDataSource.paginator = this.paginator;
     this.projectsDataSource.sort = this.sort;
+    this.selectedProject = new Project();
   }
 
+  /**
+   * Filter projects in table
+   * @param filterValue
+   */
   applyFilter(filterValue: string) {
     this.projectsDataSource.filter = filterValue.trim().toLowerCase();
-
     if (this.projectsDataSource.paginator) {
       this.projectsDataSource.paginator.firstPage();
     }
+  }
+
+  /**
+   * Show information of selected project
+   * @param event
+   * @param project
+   */
+  showProjectInfo(event, project){
+    this.selectedProject = project;
+    console.log(this.selectedProject);
   }
 
 }
