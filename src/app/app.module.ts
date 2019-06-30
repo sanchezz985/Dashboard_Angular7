@@ -7,7 +7,6 @@ import {RouterModule, Routes} from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import { VersionsComponent } from './versions/versions.component';
 import { RelationshipsComponent } from './relationships/relationships.component';
-import { DashboardContainerComponent } from './dashboard-container/dashboard-container.component';
 import { MaterialModule } from './material/material.module';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
@@ -26,8 +25,7 @@ const routes : Routes = [
     ProjectsComponent,
     HomeComponent,
     VersionsComponent,
-    RelationshipsComponent,
-    DashboardContainerComponent
+    RelationshipsComponent
   ],
   imports: [
     AppRoutingModule,

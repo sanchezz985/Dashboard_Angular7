@@ -3,6 +3,27 @@
   height: 100px;
 }
 
-dashboard-container{
+.projects-container{
   width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.dashboard-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-sidenav {
+  padding: 10px;
+  width: 30%;
 }
