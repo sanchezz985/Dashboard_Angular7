@@ -1,3 +1,8 @@
-<p>
-  projects works!
-</p>
+<div class="projects-title">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+<div class="row projects-container">
+  <dashboard-container [projects]="projects" [headers]="headers"></dashboard-container>
+</div>

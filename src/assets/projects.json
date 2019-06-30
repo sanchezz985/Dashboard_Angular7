@@ -1,0 +1,58 @@
+[
+  {
+    "id":"1",
+    "name":"Project 1",
+    "description":"Project description 1",
+    "creationDate":"01-01-2019",
+    "peripherals": [{"enviroment": "development", "name":"DB", "description": "data base url", "url": "http://localhost:db"}],
+    "version": "0.0.1"
+  },
+  {
+    "id":"2",
+    "name":"Project 2",
+    "description":"Project description 2",
+    "creationDate":"01-01-2019",
+    "peripherals": [],
+    "version": "0.0.1"
+  },
+  {
+    "id":"3",
+    "name":"Project 3",
+    "description":"Project description 3",
+    "creationDate":"01-01-2019",
+    "peripherals": [],
+    "version": "0.0.1"
+  },
+  {
+    "id":"4",
+    "name":"Project 4",
+    "description":"Project description 4",
+    "creationDate":"01-01-2019",
+    "peripherals": [],
+    "version": "0.0.1"
+  },
+  {
+    "id":"5",
+    "name":"Project 5",
+    "description":"Project description 5",
+    "creationDate":"01-01-2019",
+    "peripherals": [],
+    "version": "0.0.1"
+  },
+  {
+    "id":"6",
+    "name":"Project 6",
+    "description":"Project description 6",
+    "creationDate":"01-01-2019",
+    "peripherals": [],
+    "version": "0.0.1"
+  },
+  {
+    "id":"7",
+    "name":"Library 1",
+    "description":"Library description 6",
+    "creationDate":"01-01-2019",
+    "peripherals": [],
+    "version": "0.0.1"
+  }
+]

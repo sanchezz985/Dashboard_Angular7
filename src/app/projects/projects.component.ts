@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Project} from "../entities/Project";
+import projects from '../../assets/projects.json';
 
 @Component({
   selector: 'projects',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  title:String;
+  headers:Array<String>;
+  projects:Project;
 
   ngOnInit() {
+    this.title = "Projects";
+    this.headers = ["#","Name","Description"];
+    this.projects = projects;
   }
 
 }
